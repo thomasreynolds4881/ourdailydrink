@@ -6,7 +6,7 @@ const CocktailCard = ({ drink }) => {
       <div className="card">
         <img src={drink.strDrinkThumb} alt="" />
         <h1>{drink.strDrink}</h1>
-        <IngredientsList ingredients={Object.values(drink).slice(17,32)} />
+        <IngredientsList measures={Object.values(drink).slice(33,48)} ingredients={Object.values(drink).slice(18,33)} />
         <p>{drink.strInstructions}</p>
       </div>
     );

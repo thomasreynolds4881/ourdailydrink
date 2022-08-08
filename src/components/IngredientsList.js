@@ -1,15 +1,18 @@
 import React from "react";
 
-const IngredientsList = ({ ingredients }) => {
+const IngredientsList = ({ measures, ingredients }) => {
+    // lol
     return (
         <div className="ingredients-list">
             {ingredients.map((ingredient, index) => {
                 if (ingredient) {
                     return (
                     <div key={index} className="ingredient">
-                        <span>{ingredient}</span>
+                        <span>{measures[index] + ingredient}</span>
                     </div>
                     );
+                } else {
+                    return null;
                 }
             })}
         </div>
