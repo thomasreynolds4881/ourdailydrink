@@ -1,6 +1,7 @@
 import React from "react";
 import IngredientsList from "./IngredientsList";
 
+// get cocktail card, pass ingredient and measure values to IngredientsList component
 const CocktailCard = ({ drink }) => {
     return (
       <div className="card">
