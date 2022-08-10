@@ -4,10 +4,21 @@ import IngredientsList from "./IngredientsList";
 // get cocktail card, pass ingredient and measure values to IngredientsList component
 const CocktailCard = ({ drink }) => {
   const [isVisible, setIsVisible] = React.useState(true);
+  const [isBold, setIsBold] = React.useState(false);
 
   function handleClick(e) {
     e.preventDefault();
     setIsVisible(!isVisible);
+  }
+
+  function handleOn(e) {
+    e.preventDefault();
+    setIsBold(true);
+  }
+
+  function handleOff(e) {
+    e.preventDefault();
+    setIsBold(false);
   }
 
   function getDate(epoch) {
@@ -29,7 +40,9 @@ const CocktailCard = ({ drink }) => {
       </div>
       <div className="instruct-container">
         <p className="instruct" style={{display: isVisible ? 'none' : 'inline-block'}}>{drink.strInstructions}</p>
-        <button className="recipe-button" onClick={handleClick}>{isVisible ? "Show Recipe" : "Hide Recipe"}</button>
+        <button className="recipe-button" onClick={handleClick} onMouseEnter={handleOn} onMouseLeave={handleOff} style={{fontWeight: isBold ? 'bold' : 'normal'}}>
+          {isVisible ? "Show Recipe" : "Hide Recipe"}
+        </button>
       </div>
       
     </div>

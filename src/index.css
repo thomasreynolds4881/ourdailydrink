@@ -12,10 +12,11 @@ code {
 }
 
 img {
-  height:18rem;
+  height:16rem;
   float:right;
   mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 h1 {
@@ -52,17 +53,19 @@ span {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .date-container {
   margin: auto;
-  min-width: 35rem;
-  max-width: 50rem;
+  max-width: 88vw;
+  transition: 0.3s;
 }
 
 .date {
   margin:auto;
   text-align: right;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
 .card {
@@ -73,9 +76,9 @@ span {
   max-width: 55vw;
   background-color: #E3D3D3;
   border-radius: 10px;
-  height: 18rem;
-  min-width: 35rem;
-  max-width: 50rem;
+  height: 16rem;
+  min-width: 90vw;
+  max-width: 60vw;
 }
 
 .instruct-container {
@@ -83,8 +86,7 @@ span {
   margin-right: auto;
   margin-top: 0px;
   transition: 0.3s;
-  min-width: 35rem;
-  max-width: 50rem;
+  max-width: 85vw;
 }
 
 .today {
@@ -92,4 +94,5 @@ span {
   margin-top: 2rem;
   font-size: 4rem;
   font: bold;
+  white-space: nowrap;
 }
