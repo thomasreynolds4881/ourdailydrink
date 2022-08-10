@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import CocktailCard from './components/CocktailCard';
 import Footer from './components/Footer';
+import CountDownTimer from "./components/CountDownTimer";
 
 const { useState } = React;
+const currentTime = new Date();
+let tomorrow = currentTime.getTime() + 85400000; // i think this logic is wrong
 
 const App = () => {
 
@@ -28,6 +31,9 @@ const App = () => {
         <h1 className='today'>Today's Cocktail...</h1>
         <hr/>
         <CocktailCard drink={cocktail} />
+        <div className="countdown-container">
+          <h4 className="countdown-text">Next cocktail:</h4><CountDownTimer countDownTimeStamp={tomorrow}/>
+        </div>
         <Footer />
       </div>
     );

@@ -11,12 +11,12 @@ function CountDownTimer({countDownTimeStamp}) {
 
     useEffect(()=>{
        const intervalId =  setInterval(()=>{
-            updateRemaianingTime(countDownTimeStamp)
+            updateRemainingTime(countDownTimeStamp)
         }, 1000)
         return ()=>clearInterval(intervalId)
     })
 
-    function updateRemaianingTime(countDown){
+    function updateRemainingTime(countDown){
         setremainingTime(getRemainingTimeMs(countDown))
 }
 

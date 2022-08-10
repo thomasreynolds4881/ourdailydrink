@@ -127,3 +127,18 @@ span {
   font-size: 1.2rem;
   
 }
+
+.countdown-timer {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.countdown-text {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}

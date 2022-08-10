@@ -21,23 +21,24 @@ export function getRemainingTimeMs(timeStampMs){
 
 function getRemainingHours(currentTime, timeStampDayjs){
 
-    const hours = timeStampDayjs.diff(currentTime, 'hours') % 60
-    return padWithZero(hours)
+    const hours = timeStampDayjs.diff(currentTime, 'hours') % 24
+    return padWithZero(hours,2)
 
 }
 function getRemainingMinutes(currentTime, timeStampDayjs){
     const minutes = timeStampDayjs.diff(currentTime, 'minutes') % 60
-    return padWithZero(minutes)
+    return padWithZero(minutes,2)
 
 }
 function getRemainingSeconds(currentTime, timeStampDayjs){
-    const seconds = timeStampDayjs.diff(currentTime, 'seconds') % 24
-    return padWithZero(seconds)
+    const seconds = timeStampDayjs.diff(currentTime, 'seconds') % 60
+    return padWithZero(seconds,2)
 
 }
 
 function padWithZero(number, minLength){
-const numberString = number.toString()
-if(numberString.length >= minLength) return numberString
-return '0'.repeat(minLength - numberString.length) + numberString
+    const numberString = number.toString()
+    if(numberString.length >= minLength)
+        return numberString
+    return '0'.repeat(minLength - numberString.length) + numberString
 }
