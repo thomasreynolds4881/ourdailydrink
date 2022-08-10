@@ -29,7 +29,7 @@ const CocktailCard = ({ drink }) => {
       </div>
       <div className="instruct-container">
         <p className="instruct" style={{display: isVisible ? 'none' : 'inline-block'}}>{drink.strInstructions}</p>
-        <button onClick={handleClick}>{isVisible ? "Show Recipe" : "Hide Recipe"}</button>
+        <button className="recipe-button" onClick={handleClick}>{isVisible ? "Show Recipe" : "Hide Recipe"}</button>
       </div>
       
     </div>

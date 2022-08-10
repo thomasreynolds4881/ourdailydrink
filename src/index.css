@@ -41,7 +41,7 @@ span {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
-button {
+.recipe-button {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   background-color: #F8F4F3;
   border: none;
