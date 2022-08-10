@@ -1,5 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
+import CountDownTimer from "./CountDownTimer";
 import IngredientsList from "./IngredientsList";
+//import dayjs from "dayjs"
+
+const currentTime = new Date()
+let tomorrow = currentTime.getTime() + 85400000
+
 
 // get cocktail card, pass ingredient and measure values to IngredientsList component
 const CocktailCard = ({ drink }) => {
@@ -28,6 +34,13 @@ const CocktailCard = ({ drink }) => {
     return (date.getMonth()+1) + "/" + (date.getDate()+1) + "/" + date.getFullYear();
   }
 
+  useEffect(()=>{
+    const updateDay = setInterval(()=>{
+     return tomorrow + 85400000
+      }, 85400000)
+      return ()=>{clearInterval(updateDay)}
+  }, [])
+
   return (
     <div>
       <div className="date-container">
@@ -46,7 +59,7 @@ const CocktailCard = ({ drink }) => {
         </button>
         <p className="instruct" style={{display: isVisible ? 'none' : 'inline-block'}}>{drink.strInstructions}</p>
       </div>
-      
+      <CountDownTimer countDownTimeStamp={tomorrow}/>
     </div>
   );
 }
