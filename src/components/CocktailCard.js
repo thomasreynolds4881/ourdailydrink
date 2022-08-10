@@ -35,14 +35,16 @@ const CocktailCard = ({ drink }) => {
       </div>
       <div className="card">
         <img src={drink.strDrinkThumb} alt="" />
-        <h1>{drink.strDrink}</h1>
-        <IngredientsList measures={Object.values(drink).slice(33,48)} ingredients={Object.values(drink).slice(18,33)} />
+        <div className="card-content">
+          <h1 className="drink-text">{drink.strDrink}</h1>
+          <IngredientsList measures={Object.values(drink).slice(33,48)} ingredients={Object.values(drink).slice(18,33)} />
+        </div>        
       </div>
       <div className="instruct-container">
-        <p className="instruct" style={{display: isVisible ? 'none' : 'inline-block'}}>{drink.strInstructions}</p>
         <button className="recipe-button" onClick={handleClick} onMouseEnter={handleOn} onMouseLeave={handleOff} style={{fontWeight: isBold ? 'bold' : 'normal'}}>
           {isVisible ? "Show Recipe" : "Hide Recipe"}
         </button>
+        <p className="instruct" style={{display: isVisible ? 'none' : 'inline-block'}}>{drink.strInstructions}</p>
       </div>
       
     </div>

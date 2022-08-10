@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import CocktailCard from './components/CocktailCard';
+import Footer from './components/Footer';
 
 const { useState } = React;
 
@@ -24,8 +25,10 @@ const App = () => {
   if (cocktail) {
     return (
       <div>
-        <h1 className='today'>Today's cocktail...</h1>
+        <h1 className='today'>Today's Cocktail...</h1>
+        <hr/>
         <CocktailCard drink={cocktail} />
+        <Footer />
       </div>
     );
   } else {
