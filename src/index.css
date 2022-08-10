@@ -8,24 +8,88 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.content {
-  margin: auto;
-  padding-left: 20px;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
 img {
-  width:300px;
-  height:300px;
-  object-fit:cover;
-  border-radius:5%;
+  height:18rem;
+  float:right;
+  mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+  border-radius: 10px;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 400;
+  font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
   margin-bottom: 0.5rem;
+  margin: auto;
+}
+
+p {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 5px;
+  text-align: justify;
+  background-color: #F8F4F3;
+  display:none;
+}
+
+span {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+button {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  background-color: #F8F4F3;
+  border: none;
+  color: #2F4F4F;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.date-container {
+  margin: auto;
+  min-width: 35rem;
+  max-width: 50rem;
+}
+
+.date {
+  margin:auto;
+  text-align: right;
+}
+
+.card {
+  margin: auto;
+  margin-top: 5px;
+  padding-left: 20px;
+  transition: 0.3s;
+  max-width: 55vw;
+  background-color: #E3D3D3;
+  border-radius: 10px;
+  height: 18rem;
+  min-width: 35rem;
+  max-width: 50rem;
+}
+
+.instruct-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  transition: 0.3s;
+  min-width: 35rem;
+  max-width: 50rem;
+}
+
+.today {
+  margin-left: 5rem;
+  margin-top: 2rem;
+  font-size: 4rem;
+  font: bold;
 }

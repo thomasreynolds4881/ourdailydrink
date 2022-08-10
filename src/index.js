@@ -23,11 +23,9 @@ const App = () => {
   // get the cocktail when the app loads
   if (cocktail) {
     return (
-      <div className='content'>
-        <h1>Today's cocktail...</h1>
-        <div className="cocktail-container">
-          <CocktailCard drink={cocktail} />
-        </div>
+      <div>
+        <h1 className='today'>Today's cocktail...</h1>
+        <CocktailCard drink={cocktail} />
       </div>
     );
   } else {

@@ -6,9 +6,9 @@ const IngredientsList = ({ measures, ingredients }) => {
     let ingredients_measures = [];
     let measure = "";
     for (let i = 0; i < ingredients.length; i++) {
-        measures[i] ? measure = ' [ ' + measures[i] + ']' : measure = "";
+        measures[i] ? measure = measures[i] : measure = "";
         if (ingredients[i])
-            ingredients_measures.push(ingredients[i] + measure);
+            ingredients_measures.push(measure + " " + ingredients[i]);
     }
 
     // return render of the list of ingredients
