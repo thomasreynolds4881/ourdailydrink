@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import CountDownTimer from "./CountDownTimer";
 import IngredientsList from "./IngredientsList";
 //import dayjs from "dayjs"
 
 const currentTime = new Date()
 let tomorrow = currentTime.getTime() + 85400000
-//TODO: one day = 85400000 ms
+
 
 const CocktailCard = ({ drink }) => {
 

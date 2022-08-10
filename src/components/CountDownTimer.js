@@ -14,7 +14,7 @@ function CountDownTimer({countDownTimeStamp}) {
             updateRemaianingTime(countDownTimeStamp)
         }, 1000)
         return ()=>clearInterval(intervalId)
-    },[])
+    })
 
     function updateRemaianingTime(countDown){
         setremainingTime(getRemainingTimeMs(countDown))
