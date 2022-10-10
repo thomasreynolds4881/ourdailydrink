@@ -6,8 +6,6 @@ import Footer from './components/Footer';
 //import CountDownTimer from "./components/CountDownTimer";
 
 const { useState } = React;
-//const currentTime = new Date();
-//let tomorrow = currentTime.getTime() + 85400000; // i think this logic is wrong
 
 const App = () => {
 
