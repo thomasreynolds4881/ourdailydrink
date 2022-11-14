@@ -52,6 +52,11 @@ span {
   transition: 0.3s;
   height: 30px;
 }
+
+.cocktail-card {
+  padding: 8px;
+}
+
 .date-container {
   margin: auto;
   max-width: 88vw;
@@ -81,7 +86,7 @@ span {
   padding-left: 20px;
   transition: 0.3s;
   max-width: 55vw;
-  background-color: #E3D3D3;
+  background-color: #ECE6DB;
   border-radius: 10px;
   height: 16rem;
   min-width: 90vw;
@@ -112,7 +117,6 @@ span {
 }
 
 .footer {
-  position:absolute;
   width: 100%;
   height: 3rem;
   bottom: 0;
@@ -141,4 +145,23 @@ span {
   padding-top: 1rem;
   margin-bottom: 0.2rem;
   font-size: 1.2rem;
+}
+
+.historyButton {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  background-color: transparent;
+  border: none;
+  color: #2F4F4F;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 30px;
+}
+
+.historyButtonContainer {
+  text-align: center;
 }

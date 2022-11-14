@@ -25,11 +25,11 @@ const CocktailCard = ({ drink }) => {
     let date = new Date(0);
     let diff = epoch - date;
     date.setDate((date.getDate() + diff));
-    return (date.getMonth()+1) + "/" + (date.getDate()+1) + "/" + date.getFullYear();
+    return (date.getMonth()+1) + "/" + (date.getDate()) + "/" + date.getFullYear();
   }
 
   return (
-    <div>
+    <div className="cocktail-card">
       <div className="date-container">
         <h2 className="date">{getDate(drink.date)}</h2>
       </div>
