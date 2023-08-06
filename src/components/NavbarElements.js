@@ -4,11 +4,13 @@ import styled from "styled-components";
   
 export const Nav = styled.nav`
   background: #E6D4D2;
-  height: 85px;
+  height: 45px;
   display: flex;
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
+  position: fixed;
+  width: 100%;
 `;
   
 export const NavLink = styled(Link)`
@@ -20,7 +22,8 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #4d4dff;
+    color: #FFFFFF;
+    font-weight: bold;
   }
 `;
   
@@ -47,7 +50,4 @@ export const NavMenu = styled.div`
   /* Third Nav */
   /* width: 100vw;
 white-space: nowrap; */
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;

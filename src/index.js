@@ -4,19 +4,21 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Daily from './pages/daily';
 import History from './pages/history';
-import Footer from './components/Footer';
+import About from './pages/about';
   
 function App() {
   return (
       <Router>
         <Navbar />
-        <h1 className='today'>Our Daily Drink</h1>
-        <hr/>
+        <div className="header-container">
+          <h1 className='today'>Our Daily Drink</h1>
+          <hr/>
+        </div>
         <Routes>
-            <Route exact path='/' element={<Daily />} />
-            <Route path='/history' element={<History />} />
+          <Route exact path='/' element={<Daily />} />
+          <Route path='/history' element={<History />} />
+          <Route path='/about' element={<About />} />
         </Routes>
-        <Footer />
       </Router>
   );
 }

@@ -8,10 +8,13 @@ const Navbar = () => {
       <Nav>
         <NavMenu>
           <NavLink to="/">
-            Daily Drink
+            Daily
           </NavLink>
           <NavLink to="/history">
-            Drink History
+            History
+          </NavLink>
+          <NavLink to="/about">
+            About
           </NavLink>
         </NavMenu>
       </Nav>

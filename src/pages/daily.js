@@ -24,7 +24,9 @@ const Daily = () => {
   if (cocktail) {
     return (
       <div>
-        <CocktailCard drink={cocktail} />
+        <div className="cocktail-card-container">
+          <CocktailCard drink={cocktail} />
+        </div>
       </div>
     );
   } else {
