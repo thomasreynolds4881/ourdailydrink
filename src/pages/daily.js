@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import CocktailCard from '../components/CocktailCard';
+import CocktailCardDaily from '../components/CocktailCardDaily';
 //import CountDownTimer from "./components/CountDownTimer";
 
 const { useState } = React;
@@ -23,10 +23,8 @@ const Daily = () => {
   // get the cocktail when the app loads
   if (cocktail) {
     return (
-      <div>
-        <div className="cocktail-card-container">
-          <CocktailCard drink={cocktail} />
-        </div>
+      <div className="cocktail-card-container">
+        <CocktailCardDaily drink={cocktail} />
       </div>
     );
   } else {

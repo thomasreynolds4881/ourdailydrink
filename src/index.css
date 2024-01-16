@@ -12,21 +12,93 @@ code {
 }
 
 hr {
-  width: 91vw;
   border: 1px solid #ccc;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 span {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
-.cocktail-img {
-  height:16rem;
-  float:right;
-  mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+.spacer {
+  height: 70px;
+}
+
+.cocktail-card-container {
+  display:block;
+  width: 100%;
+}
+
+.cocktail-card-daily {
+  transition: 0.3s;
+  padding: 20px;
+}
+
+.img-container-daily {
+  margin:auto;
+}
+
+.cocktail-img-daily {
+  border-radius: 10%;
+  transition: 0.3s;
+  margin:auto;
+  width: auto;
+  max-width: 90%;
+  max-height: 30rem;
+  object-fit: cover;
+  display:block;
+  border: 3px solid #555
+}
+
+.date-container-daily {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.date-daily {
+  margin:auto;
+  margin-top: 0px;
+  text-align: right;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  padding: 3px;
+}
+
+.card-daily {
+  margin: auto;
+  margin-top: 20px;
   border-radius: 10px;
+  height: 16rem;
+  max-width: 1000px;
+}
+
+.card-content-daily {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.drink-text-daily {
+  font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin: auto;
+}
+
+.instruct-container-daily {
+ padding: 2px;
+}
+
+.instruct-daily {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  text-align: justify;
+}
+
+.cocktail-card {
+  padding: 8px;
   transition: 0.3s;
 }
 
@@ -43,27 +115,6 @@ span {
   padding: 3px;
 }
 
-.drink-text {
-  font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
-  font-size: 2.5rem;
-  font-weight: 900;
-  -webkit-text-stroke: 0.3px #ECE6DB;
-  padding-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin: auto;
-}
-
-.cocktail-card-container {
-  padding-top: 140px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.cocktail-card {
-  padding: 8px;
-  transition: 0.3s;
-}
-
 .card {
   margin: auto;
   margin-top: 0px;
@@ -77,12 +128,31 @@ span {
   box-shadow: 4px 4px #d4d4d4;
 }
 
+.cocktail-img {
+  height:16rem;
+  float:right;
+  mask-image: linear-gradient(to left, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
 .card-content {
   float: left;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
   position: absolute;
   padding-left: 20px;
+  padding-right: 20px;
+}
+
+.drink-text {
+  font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-shadow: 1px 1px 3px rgb(197, 197, 191);
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin: auto;
 }
 
 .recipe-button-container {
@@ -135,22 +205,51 @@ span {
   border-radius: 5px;
 }
 
+.ingredients-list {
+  border-radius: 3px;
+  padding: 2px;
+  width: fit-content;
+}
+
+.ingredient-item {
+  color:#020202;
+}
+
+.logo-container {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  pointer-events: none
+}
+
+.logo {
+  height: 65px;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  @media screen and (max-width: 780px) {
+    visibility: hidden;
+  }
+}
+
+.logo2 {
+  height: 70px;
+}
+
+.empty {
+  width: 132.82px;
+}
+
 .today {
   font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
   margin:auto;
   text-align: center;
   padding: 5px;
   padding-top: 3.5rem;
-  font-size: 3rem;
+  font-size:3rem;
   font-weight: bold;
   white-space: nowrap;
-}
-
-.header-container {
-  position: fixed;
-  width: 100%;
-  background: #FFFFFF;
-  z-index: 10;
 }
 
 .footer-text {
@@ -199,6 +298,6 @@ span {
 
 .about-container {
   margin: auto;
-  margin-top: 0px;
+  padding: 8px;
   max-width: 1000px;
 }
